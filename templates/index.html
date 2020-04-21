@@ -1,0 +1,28 @@
+    
+    <html>
+        <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <script src="{{ url_for('static', filename='css/design.js') }}"></script>
+        </head>
+        <body>
+        <div class="frame">
+          <div class="center">
+                <div class="bar"></div>
+                <div class="title">Incident Impact Prediction</div>
+                <div class="dropzone">
+                    <div class="content">
+                        <img src="https://100dayscss.com/codepen/upload.svg" class="upload">
+                        <span class="filename"></span>
+                        <form action="/transform" method="post" enctype="multipart/form-data">
+                        <input type="file" name="data_file" class="btn btn-block"/>
+                    </div>
+                </div>
+                <img src="https://100dayscss.com/codepen/syncing.svg" class="syncing">
+                <img src="https://100dayscss.com/codepen/checkmark.svg" class="done">
+                <button type="submit" class="upload-btn">Predict</button>
+                </form>
+          </div>
+        </div>
+        </body>
+        </head>
+    </html>
